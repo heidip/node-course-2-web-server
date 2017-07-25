@@ -56,6 +56,16 @@ app.get('/about',
                      });
         });
 
+
+app.get('/projects',
+        (req,res) => {
+          res.render('projects.hbs',
+                     {
+                       projecting: 'How to project'
+                     });
+        });
+
+
 app.get('/bad',
         (req,res) => {
           res.send({
